@@ -1,0 +1,9 @@
+#!/bin/sh
+#DESCRIÇÃO: ROTEIRO SIMPLES PARA HORA
+
+icone1=
+icone2=
+comando1=$(date "+(%a) %d/%m")
+comando2=$(date "+[%H:%M]")
+
+echo "$icone1 $comando1 $icone2 $comando2"

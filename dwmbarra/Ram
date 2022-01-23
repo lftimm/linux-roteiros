@@ -1,0 +1,7 @@
+#!/bin/sh
+#DESCRIÇÃO: ROTEIRO SIMPLES PARA RAM
+
+icon=
+comando=$(free -h | grep Mem | awk '{print $3"/"$2}')
+
+echo "$icon $comando"

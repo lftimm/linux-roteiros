@@ -1,0 +1,8 @@
+#!/bin/sh
+#DESCRIÇÃO: ROTEIRO SIMPLES PARA MEMÓRIA
+
+icone=
+drive="$1"
+comando=$(df -h | grep $drive | awk '{print $3"/"$2}')
+
+echo "$icone $comando"

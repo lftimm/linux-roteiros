@@ -1,0 +1,14 @@
+#!/bin/sh
+#DESCRIÇÃO: ROTEIRO SIMPLES PARA VER O NÚMERO DE ATUALIZAÇÕES
+
+icone=
+comando=$(xcheckmypkgs | wc -l)
+
+while :
+do
+  if [ $(checaweb) = "Online" ] 
+  then
+     echo "$icone $comando"
+     break
+  fi
+done
